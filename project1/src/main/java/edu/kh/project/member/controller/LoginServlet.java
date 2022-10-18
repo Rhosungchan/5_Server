@@ -54,7 +54,7 @@ public class LoginServlet extends HttpServlet{
 			// - 요청에 대한 응답화면을 직접 만드는 것이 아닌
 			// - 다른 응답화면을 구현하는 Servlet을 요청하여 대신 화면을 만들게 하는 것.
 			
-			// request scope에 속서을 추가해도 
+			// request scope에 속성을 추가해도 
 			// redirect를 하는 경우 request가 다시 만들어져 유지되지 않음!
 //			req.setAttribute("loginMember", loginMember);
 			
