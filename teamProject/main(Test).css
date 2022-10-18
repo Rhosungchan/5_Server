@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    
+    /* HTML 요소가 가지고 있는 고유한 padding, margin을 모두 없앰  */
+    padding: 0;
+    margin: 0;
+}
+
+/* [ main ] */
+main{
+    width: 1140px;
+    margin: auto; /* body태그 가로방향 가운데 배치 */
+}
+
+
+
+/* [ footer ] */
+
+footer{
+    height: 200px;
+    background-color: #a3add342;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+} 
+
+footer > p{
+    font-weight: bold;
+    margin: 16px 0 ;
+}
+
+footer > article > *{
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer span{
+    padding: 0 10px;
+}

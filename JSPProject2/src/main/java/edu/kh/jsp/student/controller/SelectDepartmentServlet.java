@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import edu.kh.jsp.student.model.service.StudentService;
 import edu.kh.jsp.student.model.vo.Student;
 
-@WebServlet("/student/SelectDepartment")
+@WebServlet("/student/SelectDpt")
 public class SelectDepartmentServlet extends HttpServlet{
 
 	
