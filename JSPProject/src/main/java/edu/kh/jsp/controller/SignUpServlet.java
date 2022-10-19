@@ -17,7 +17,7 @@ public class SignUpServlet extends HttpServlet{
 	
 		req.setCharacterEncoding("UTF-8");
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/SignUpResult.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/member/SignUpResult.jsp");
 		
 		dispatcher.forward(req, resp);
 		

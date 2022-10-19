@@ -8,8 +8,11 @@
 
 /* [ main ] */
 main{
+    background-color: aqua;
     width: 1140px;
     margin: auto; /* body태그 가로방향 가운데 배치 */
+    justify-content: center;
+    align-items: center;
 }
 
 

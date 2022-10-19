@@ -101,7 +101,7 @@
 			       
 			                   <!-- 회원가입 / IDPW 찾기 -->
 			                   <article id="signUp-find-area">
-			                       <a href="#">회원가입</a>
+			                       <a href="/member/signUp">회원가입</a>
 			                       <span>|</span>
 			                       <a href="#">ID/PW찾기</a>
 			                   </article>
