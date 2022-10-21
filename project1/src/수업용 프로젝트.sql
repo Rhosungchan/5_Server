@@ -270,6 +270,14 @@ AND MEMBER_PW = 'pass01!';
 
 
 
+-- 회원 정보 수정 
+UPDATE "MEMBER" SET 
+MEMBER_NICKNAME = '변경된 닉네임',
+MEMBER_TEL = '변경된 전화번호', 
+MEMBER_ADDRESS = '1324,,서울,,어딘가'
+WHERE MEMBER_NO = 4; --로그인한 회원의 번호
+
+
 
 
 

@@ -35,10 +35,9 @@ public class MemberService extends HttpServlet{
 		return loginMember;
 	}
 
-	/** 회원 가입 서비스 
+	/** 회원가입 서비스
 	 * @param member
-	 * @return result
-	 * @throws Exception
+	 * @return result 
 	 */
 	public int signUp(Member member) throws Exception{
 		
@@ -46,14 +45,34 @@ public class MemberService extends HttpServlet{
 		
 		int result = dao.signUp(conn, member);
 		
-		if(result > 0) commit(conn);
+		if(result > 0 ) commit(conn);
+		else            rollback(conn);
+
+		close(conn);
 		
-		else  rollback(conn);
+		return result;
+	}
+
+	/** 회원 정보 수정 서비스 
+	 * @param member
+	 * @return result
+	 * @throws Exception
+	 */
+	public int updateMember(Member member) throws Exception{
+		
+		Connection conn = getConnection();
+		
+		int result = dao.updateMember(conn, member);
+		
+		if(result > 0) commit(conn);
+		else        rollback(conn);
 		
 		close(conn);
 		
 		return result;
 	}
+
+
 	
 	
 	

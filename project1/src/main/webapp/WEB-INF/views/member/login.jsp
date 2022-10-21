@@ -32,7 +32,7 @@
             </section> 
             <section class="input-box">
                 <!-- required 속성 : form태그 제출 시 해당 input 태그에 값이 존재하는 검사  -->
-                <input type="password" name="inputPw" placeholder="password" required>
+                <input type="Email" name="inputPw" placeholder="password" required>
             </section> 
 
             <button class="login-btn">Login</button>

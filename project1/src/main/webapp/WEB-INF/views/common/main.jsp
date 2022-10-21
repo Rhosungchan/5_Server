@@ -74,7 +74,7 @@
 			                            placeholder="이메일" autocomplete="off" value="${cookie.saveId.value}">
                                                                                     <%-- 쿠키 중 saveId에 저장된 값 --%>
 			                            <!--  autocomplete="off" : 자동완성 사용 X -->
-			                           <input type="text" name="inputPw" placeholder="비밀번호">
+			                           <input type="password" name="inputPw" placeholder="비밀번호">
 			                       </section>
 			       
 			                       <section>
@@ -123,7 +123,7 @@
 							<div class="my-info">
 
                                 <div>
-                                    <a href="#" id="nickname">${loginMember.memberNickname}</a>
+                                    <a href="/member/myPage/info" id="nickname">${loginMember.memberNickname}</a>
                                     <a href="/member/logout" id="logout-btn">로그아웃</a>
                                 </div>
 
