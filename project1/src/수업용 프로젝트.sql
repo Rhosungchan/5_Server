@@ -700,5 +700,22 @@ BOARD_CONTENT = #{BOARD_CONTENT}
 WHERE BOARD_NO = #{boardNo}
 
 
+-- 2022 11 25 (금요일)
+
+-- 검색 조건이 일치하는 게시글 수조회 
+SELECT COUNT(*) FROM BOARD 
+JOIN "MEMBER" USING(MEMBER_NO)
+WHERE BOARD_CODE=1
+AND BOARD_DEL_FL ='N'
+-- 제목 검색 
+-- AND BOARD_TITLE LIKE '%10%'
+-- 내용 검색 
+-- AND BOARD_CONTENT LIKE '%11%'
+-- 내용 검색 
+--AND (BOARD_TITLE LIKE '%10%' 
+--OR BOARD_CONTENT LIKE '%11%')
+-- 작성자 닉네임 
+--AND MEMBER_NICKNAME LIKE '%오%'
+
 
 
